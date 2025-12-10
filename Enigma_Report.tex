@@ -14,7 +14,51 @@
 \newpage
 
 \section{Encrypt function}
-\subsection{Functionality and Logic}
+\subsection{Initial Logic}
+
+The first steps of working on the encrypt function were first to simplify the exercise at hand
+into simpler steps, that can be tackled one by one, this process is also known as the top-down method.
+The assignment has been broken down into the following steps:
+
+\begin{enumerate}
+    \item Find a way to set the initial offset of the Enigma Machine to the offset given in the form of a 3-letter string \textit{rotors}.
+    \item Simulate the running of the Enigma Machine with the initial offset and the letters in \textit{message} typed in individually.
+    \item Find a way to record the ouput of the enctryption process of each individual letter.
+    \item Return a string of the encrypted letters.
+\end{enumerate}
+
+\noindent\title{\textbf{Setup}}\newline
+
+\noindent Before we started with writing any new code, we made sure to \textit{import EnigmaModel from EnigmaModel}, which allowed us to use
+functions and variables defined in the \textit{EnigmaModel.py} file.
+\newline\par\noindent Next, we chose to define the variable \textit{alphabet} as the string consisting of all capital letter in the english alphabet,
+as this was used several times as the backbone to many functions and steps in EnigmaModel.py.
+
+\hfill \break
+\noindent\title{\textbf{Step 1}}\newline
+
+\noindent We needed to have a way of accessing the rotors' offsets from the EnigmaModel.py file in order to change their initial values from "AAA" or 000 to the values given in \textit{rotors}.
+We chose to do that by assigning \textit{EnigmaModel()} to a variable \textit{model}.
+\newline\par\noindent Now we could start focusing on the translation of \textit{rotors} into the initial rotor offsets. What 
+we needed to do was to turn letters into numbers into offset fx. "ABC" == "012" == 0 and 1 and 2, the important observation here is that \textbf{the index of a given letter in the alphabet is also the offset of the rotor when showing that specific letter}. 
+Thanks to that, we could implement
+
+\hfill \break
+\noindent\title{\textbf{Step 2}}\newline
+
+\noindent B
+
+\hfill \break
+\noindent\title{\textbf{Step 3}}\newline
+
+\noindent B
+
+\hfill \break
+\noindent\title{\textbf{Step 4}}\newline
+
+\noindent B
+
+\hfill \break
 \subsection{Debugging}
 
 \newpage
