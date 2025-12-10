@@ -14,7 +14,7 @@
 \newpage
 
 \section{Encrypt function}
-\subsection{Initial Logic}
+\subsection{Logic and Functionality}
 
 The first steps of working on the encrypt function were first to simplify the exercise at hand
 into simpler steps, that can be tackled one by one, this process is also known as the top-down method.
@@ -41,7 +41,11 @@ as this was used several times as the backbone to many functions and steps in En
 We chose to do that by assigning \textit{EnigmaModel()} to a variable \textit{model}.
 \newline\par\noindent Now we could start focusing on the translation of \textit{rotors} into the initial rotor offsets. What 
 we needed to do was to turn letters into numbers into offset fx. "ABC" == "012" == 0 and 1 and 2, the important observation here is that \textbf{the index of a given letter in the alphabet is also the offset of the rotor when showing that specific letter}. 
-Thanks to that, we could implement
+Thanks to that, we could implement the following code:
+\newline\par\centerline{model.rotorX.offset = alphabet.index(rotors[X])}
+\hfill \break
+\par\noindent To put it simply, this finds the offset of a given rotor in the EnigmaModel.py and assigns to it the value of the index 
+of the first occurance of a given letter in the alphabet string.
 
 \hfill \break
 \noindent\title{\textbf{Step 2}}\newline
