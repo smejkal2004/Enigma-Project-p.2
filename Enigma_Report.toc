@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Encrypt function}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Functionality and Logic}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Debugging}{3}{}%
+\contentsline {section}{\numberline {2}Find Rotors function}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Functionality and Logic}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Debugging}{4}{}%
